@@ -1,0 +1,44 @@
+[
+    {
+        "name": "Dr. mohamed belal",
+        "specialty": "Cardiology",
+        "rating": 4.5,
+        "reviews": 120,
+        "image": "../assets/images/best-doc1.jpg"
+    },
+    {
+        "name": "Dr. Mohamed fayez",
+        "specialty": "Dermatology",
+        "rating": 4.8,
+        "reviews": 250,
+        "image": "../assets/images/best-doc2.jpg"
+    },
+    {
+        "name": "Dr. mohamed hassan",
+        "specialty": "Neurology",
+        "rating": 4.2,
+        "reviews": 180,
+        "image": "../assets/images/best-doc3.jpg"
+    },
+    {
+        "name": "Dr. Sara Youssef",
+        "specialty": "Pediatrics",
+        "rating": 4.9,
+        "reviews": 300,
+        "image": "../assets/images/best-doc4.jpg"
+    },
+    {
+        "name": "Dr. mohamed hazem",
+        "specialty": "Orthopedics",
+        "rating": 4.7,
+        "reviews": 220,
+        "image": "../assets/images/best-doc5.jpg"
+    },
+    {
+        "name": "Dr. ibrahem tamer",
+        "specialty": "Psychiatry",
+        "rating": 4.6,
+        "reviews": 150,
+        "image": "../assets/images/best-doc6.jpg"
+    }
+]
