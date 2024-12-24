@@ -87,7 +87,7 @@ body {
 }
 
 .hero-section-image {
-  width: 60%;
+  width: 70%;
   height: 100%;
   border-radius: 10px;
 }
@@ -96,7 +96,11 @@ body {
   width: 100%;
   object-fit: cover;
   height: 100%;
-  border-radius: 10px 10px 0 10px;
+  border-radius: 10px 0px 0 10px;
+  -webkit-border-radius: 10px 0px 0 10px;
+  -moz-border-radius: 10px 0px 0 10px;
+  -ms-border-radius: 10px 0px 0 10px;
+  -o-border-radius: 10px 0px 0 10px;
 }
 
 .cta-button {
@@ -393,7 +397,90 @@ body {
 .doc-btn-b {
   background-color: #007bff;
 }
+footer {
+  background-color: #002fff;
+  color: white;
+  padding: 20px 0;
+}
 
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+  justify-content: space-between;
+}
+
+.footer-column {
+  flex: 1;
+  min-width: 200px;
+  margin: 10px;
+}
+
+.footer-column h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-column ul li {
+  margin: 5px 0;
+}
+
+.footer-column ul li a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-column ul li a:hover {
+  color: #ffd700;
+}
+
+.app-links img {
+  max-width: 150px;
+  border-radius: 10px;
+  margin: 10px 0;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+.social-icons {
+  display: flex;
+  gap: 10px;
+}
+
+.social-icons a {
+  color: white;
+  font-size: 1.5rem;
+  transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #ffd700;
+}
+
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-column {
+    text-align: center;
+  }
+
+  .social-icons {
+    justify-content: center;
+  }
+}
 /* Media queries for responsiveness */
 
 @media screen and (max-width: 1512px) {
