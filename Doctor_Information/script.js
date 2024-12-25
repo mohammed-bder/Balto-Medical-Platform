@@ -97,3 +97,14 @@ function toggleFilterBox() {
     document.querySelector('.filter-box').classList.toggle('active');
 }
 
+function toggleGender(selectedGender) {
+    const maleCheckbox = document.getElementById('male');
+    const femaleCheckbox = document.getElementById('female');
+    
+    if (selectedGender === 'male') {
+        femaleCheckbox.checked = false;
+    } else if (selectedGender === 'female') {
+        maleCheckbox.checked = false;
+    }
+}
+

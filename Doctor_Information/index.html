@@ -15,7 +15,6 @@
         <div class="nav-header">
   
             <div class="logo">
-              <!-- <img src="https://via.placeholder.com/100x30" alt="Vezeeta Logo" /> -->
               <span>Balto</span>
             </div>
             <div class="menu-toggle">
@@ -24,8 +23,8 @@
           </div>
         <div class="nav-content">
           <ul class="nav-links">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">For Doctors</a></li>
+            <li><a href="../home/home.html">Home</a></li>
+            <li><a href="../doctor/docsignup.html">For Doctors</a></li>
             <li><a href="#">Contact Us</a></li>
             <li><a href="../doctor/signin.html">Login</a></li>
           </ul>
@@ -44,8 +43,8 @@
                         <div class="dropdown">
                             <button class="dropdown-toggle"><i class="fa-solid fa-venus-mars"></i> Gender</button>
                             <div class="dropdown-content">
-                                <label><input type="checkbox" id="male"> Male</label>
-                                <label><input type="checkbox" id="female"> Female</label>
+                                <label><input type="checkbox" id="male" onclick="toggleGender('male')"> Male</label>
+                                <label><input type="checkbox" id="female" onclick="toggleGender('female')"> Female</label>
                             </div>
                         </div>
                     </div>
@@ -181,126 +180,3 @@
     <script src="../Shared/Shared_Script.js"></script>
 </body>
 </html>
-
-
-
-
-
-
-<!-- 
-/* Responsive Design */
-@media (max-width: 1200px) {
-    .filter-box {
-        position: static;
-        width: 100%;
-        margin-bottom: 20px;
-        box-shadow: none;
-    }
-    
-    .container.mt-4 {
-        margin-left: 0;
-    }
-
-    .doctor-card {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .doctor-card img {
-        margin-bottom: 15px;
-        width: 80px;
-        height: 80px;
-    }
-    
-    .doctor-card .card-body {
-        width: 100%;
-        text-align: center;
-    }
-
-    .doctor-card .card-body h5 {
-        font-size: 20px;
-    }
-
-    .doctor-card .card-body .specialty,
-    .doctor-card .card-body .fee,
-    .doctor-card .card-body .rating {
-        font-size: 14px;
-    }
-}
-
-@media (max-width: 992px) {
-    .filter-box {
-        padding: 15px;
-    }
-
-    .schedule-carousel {
-        flex-direction: column;
-        gap: 10px;
-    }
-
-    .schedule-arrow {
-        display: none;
-    }
-
-    .day-column {
-        flex: none;
-        width: 100%;
-        margin-bottom: 15px;
-    }
-
-    .book-btn {
-        padding: 8px 0;
-        font-size: 12px;
-    }
-}
-
-@media (max-width: 768px) {
-    .filter-box {
-        width: 100%;
-    }
-    
-    .doctor-card {
-        padding: 15px;
-        margin-bottom: 20px;
-    }
-
-    .sort-section {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-    
-    .sort-label,
-    .filter-title {
-        font-size: 14px;
-    }
-    
-    .sort-select {
-        width: 100%;
-    }
-}
-
-@media (max-width: 576px) {
-    body {
-        font-size: 14px;
-    }
-
-    .filter-box {
-        padding: 10px;
-    }
-    
-    .doctor-card img {
-        width: 60px;
-        height: 60px;
-    }
-
-    .doctor-card .card-body h5 {
-        font-size: 18px;
-    }
-
-    .doctor-card .card-body .specialty,
-    .doctor-card .card-body .fee,
-    .doctor-card .card-body .rating {
-        font-size: 12px;
-    }
-}
--->

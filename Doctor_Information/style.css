@@ -1,7 +1,18 @@
+/* Define CSS variables */
+:root {
+  --doc-primary-color: #007bff;
+  --doc-secondary-color: #0056b3;
+  --doc-background-color: #f7f7f7;
+  --doc-text-color: #333;
+  --doc-border-radius: 12px;
+  --doc-box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  --doc-transition: all 0.3s ease;
+}
+
 /* Global Styles */
 body {
   font-family: "Arial", sans-serif;
-  background-color: #f7f7f7;
+  background-color: var(--doc-background-color);
   margin: 0;
   padding: 0;
 }
@@ -39,8 +50,8 @@ body {
   position: fixed;
   top: 205px;
   width: 300px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  border-radius: 12px;
+  box-shadow: var(--doc-box-shadow);
+  border-radius: var(--doc-border-radius);
   padding: 30px;
   background-color: #ffffff;
   margin-bottom: 30px;
@@ -50,7 +61,7 @@ body {
 .filter-box h4 {
   font-size: 22px;
   margin-bottom: 20px;
-  color: #333;
+  color: var(--doc-text-color);
 }
 
 .filter-box .filter-group {
@@ -83,7 +94,7 @@ body {
 }
 
 .filter-box .dropdown button {
-  background-color: #007bff;
+  background-color: var(--doc-primary-color);
   color: white;
   padding: 12px 20px;
   border-radius: 8px;
@@ -98,7 +109,7 @@ body {
 }
 
 .filter-box .dropdown button:hover {
-  background-color: #0056b3;
+  background-color: var(--doc-secondary-color);
 }
 
 .filter-box .dropdown.open .dropdown-content {
@@ -125,7 +136,7 @@ body {
 .sort-label {
   margin-right: 10px;
   font-weight: bold;
-  color: #333;
+  color: var(--doc-text-color);
 }
 
 .sort-select {
@@ -133,11 +144,11 @@ body {
   border: 1px solid #ddd;
   border-radius: 5px;
   background-color: #fafafa;
-  transition: all 0.3s ease;
+  transition: var(--doc-transition);
 }
 
 .sort-select:hover {
-  border-color: #007bff;
+  border-color: var(--doc-primary-color);
 }
 
 .filter-section {
@@ -148,17 +159,17 @@ body {
 .filter-title {
   font-weight: bold;
   margin-right: 5px;
-  color: #333;
+  color: var(--doc-text-color);
 }
 
 .filter-value {
   font-weight: bold;
-  color: #007bff;
+  color: var(--doc-primary-color);
 }
 
 .doctor-card {
   background-color: #fff;
-  border-radius: 12px;
+  border-radius: var(--doc-border-radius);
   box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
   margin-bottom: 40px;
   padding: 20px;
@@ -172,7 +183,7 @@ body {
   height: 120px;
   border-radius: 50%;
   object-fit: cover;
-  border: 3px solid #007bff;
+  border: 3px solid var(--doc-primary-color);
 }
 
 .doctor-card .card-body {
@@ -185,7 +196,7 @@ body {
 .doctor-card .card-body h5 {
   font-size: 24px;
   margin-bottom: 5px;
-  color: #333;
+  color: var(--doc-text-color);
   display: flex;
   align-items: center;
   gap: 5px;
@@ -203,7 +214,7 @@ body {
 
 .doctor-card .card-body .fee {
   font-size: 20px;
-  color: #007bff;
+  color: var(--doc-primary-color);
   font-weight: bold;
   display: flex;
   align-items: center;
@@ -291,7 +302,7 @@ body {
 }
 
 .day-header.today {
-  background-color: lightgray;
+  background-color: teal;
 }
 
 .day-header.tomorrow {
@@ -332,7 +343,7 @@ body {
   margin-bottom: 5px;
   background-color: #e9ecef;
   border-radius: 5px;
-  color: #333;
+  color: var(--doc-text-color);
   font-size: 14px;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
 }
@@ -380,7 +391,7 @@ body {
 /* Filter Toggle Button */
 .filter-toggle {
   display: none;
-  background-color: #007bff;
+  background-color: var(--doc-primary-color);
   color: white;
   padding: 10px 20px;
   border-radius: 0 34% 34% 0px;
@@ -399,7 +410,7 @@ body {
 }
 
 .filter-toggle:hover {
-  background-color: #0056b3;
+  background-color: var(--doc-secondary-color);
 }
 
 /* Responsive Design */
@@ -409,7 +420,7 @@ body {
     width: 23% !important;
     margin-bottom: 20px;
     box-shadow: 0 1px 10px rgba(0, 0, 0, 0.4);
-    border-radius: 12px;
+    border-radius: var(--doc-border-radius);
     padding: 14px;
     background-color: #ffffff;
     left: 30px;
@@ -453,7 +464,7 @@ body {
     position: fixed;
     width: 23%;
     box-shadow: 0 1px 10px rgba(0, 0, 0, 0.4);
-    border-radius: 12px;
+    border-radius: var(--doc-border-radius);
     padding: 10px;
     background-color: #ffffff;
     left: 20px;
