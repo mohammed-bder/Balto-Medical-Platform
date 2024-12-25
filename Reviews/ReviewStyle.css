@@ -1,0 +1,677 @@
+/* General Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f9;
+  color: #333;
+}
+
+/*********************************************NavBar*********************************************/
+/* Navbar Styles */
+.navbar {
+  background-color: #ffffff; /* Clean white background */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  padding: 15px 20px;
+  position: sticky;
+  top: 0;
+  z-index: 1000; /* Ensure navbar is always on top */
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Logo */
+.nav-logo {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #3856ff; /* Blue for branding */
+}
+
+/* Nav Links */
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+
+.nav-links li {
+  list-style: none;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #333;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+/* Hover Effect for Links */
+.nav-links a:hover {
+  color: #3856ff; /* Highlight blue on hover */
+}
+
+/* Booking Button */
+.nav-button {
+  padding: 8px 20px;
+  border-radius: 8px;
+  background-color: #3856ff; /* Primary button color */
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+}
+
+.nav-button:hover {
+  background-color: #4e89ff; /* Lighter blue on hover */
+}
+/*********************************************NavBar*********************************************/
+
+/*********************************************Container*********************************************/
+.container {
+  display: flex;
+  padding: 20px;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+/*********************************************Left-Section*********************************************/
+.left-section {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* Space between profile, bio, and services */
+}
+
+/* Bio Section */
+.bio-section,
+.services-section {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.bio-section:hover,
+.services-section:hover {
+  transform: translateY(-5px); /* Hover effect */
+}
+
+/* Section Headings */
+.bio-section h3,
+.services-section h3 {
+  margin-top: 0;
+  color: #3856ff;
+}
+
+/* Services Section */
+.services-section {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+/* Services List */
+.services-list {
+  list-style: none; /* Remove default bullet points */
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px; /* Space between service items */
+}
+
+/* Individual Service Item */
+.service-item {
+  padding: 10px 15px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  background-color: #f9f9f9;
+  font-size: 0.95rem;
+  color: #555;
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Space between bullet and text */
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+/* Bullet Point Style */
+.service-item::before {
+  content: "•";
+  font-size: 1.2rem;
+  color: #3856ff; /* Blue bullet point */
+}
+
+/* Hover Effect for Service Items */
+.service-item:hover {
+  transform: translateY(-3px); /* Slight lift */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Darker shadow on hover */
+}
+
+/* Profile Section */
+.profile-section {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.profile-section:hover {
+  transform: translateY(-5px);
+}
+
+/* Doctor Image */
+.profile-img {
+  width: 110px; /* Optimized size */
+  height: 110px;
+  border-radius: 50%; /* Circular image */
+  object-fit: cover; /* Ensures the image scales properly */
+  border: 3px solid #3856ff; /* Highlighted border */
+  margin-bottom: 10px;
+  transition: transform 0.3s ease;
+}
+
+/* Hover Effect for Image */
+.profile-img:hover {
+  transform: scale(1.1); /* Subtle zoom effect */
+}
+
+/* Doctor Name */
+h2 {
+  margin: 10px 0 5px 0;
+  font-size: 1.2rem;
+}
+
+/* Designation */
+.designation {
+  color: #777;
+  font-size: 0.9rem;
+  margin-bottom: 10px;
+}
+
+/* Ratings Section */
+.ratings {
+  margin: 10px 0;
+}
+
+.ratings p {
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.ratings .stars {
+  font-size: 1.5rem; /* Smaller stars */
+  color: #f39c12;
+  letter-spacing: 3px;
+}
+
+/* Button */
+.book-now-btn {
+  display: inline-block;
+  padding: 10px 25px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #fff;
+  background-color: #3856ff;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.book-now-btn:hover {
+  background-color: #4e89ff;
+  box-shadow: 0 4px 12px rgba(56, 86, 255, 0.4); /* Glow effect */
+}
+
+/* Reviews Section */
+.reviews-section {
+  flex: 2;
+  background-color: #ffffff;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.reviews-section:hover {
+  transform: translateY(-5px);
+}
+
+.tabs {
+  display: flex;
+  align-items: center; /* Vertically center the tabs */
+  gap: 20px; /* Space between tabs */
+  padding: 10px 15px; /* Padding inside the bar */
+  background-color: #f5f5f5; /* Light gray background for simplicity */
+  border-radius: 8px; /* Subtle rounded edges for the bar */
+  height: 45px; /* Fixed height */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05); /* Soft shadow */
+  margin-bottom: 20px; /* Adds spacing below the tabs bar */
+}
+
+/* Tab Links Style */
+.tab {
+  padding: 5px 10px;
+  font-size: 0.95rem;
+  text-decoration: none;
+  color: #555; /* Subtle text color */
+  font-weight: 500;
+  position: relative; /* For underline effect */
+  transition: color 0.3s ease; /* Smooth hover transition */
+}
+
+/* Active Tab Style */
+.tab.active {
+  color: #3856ff; /* Blue text for active tab */
+  font-weight: 600;
+}
+
+/* Hover Effect */
+.tab:hover {
+  color: #3856ff; /* Blue highlight on hover */
+}
+
+/* Underline Highlight for Active and Hover States */
+.tab.active::after,
+.tab:hover::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -2px; /* Position the underline below text */
+  width: 100%;
+  height: 2px;
+  background-color: #3856ff; /* Blue underline */
+  transition: width 0.3s ease;
+}
+
+
+/* Review Card */
+.review {
+  padding: 20px; /* Increased padding for better spacing */
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+  display: flex;
+  flex-direction: column; /* Stack elements vertically */
+  gap: 15px; /* Increased gap for clearer separation */
+}
+
+.review:hover {
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  transform: translateY(-5px); /* Subtle hover lift */
+}
+
+/* Header Section */
+.review-header {
+  display: flex;
+  justify-content: space-between; /* Space between left and right */
+  align-items: center; /* Vertically center elements */
+  width: 100%;
+}
+
+/* Left Side: Reviewer Info */
+.review-left {
+  display: flex;
+  align-items: center;
+  gap: 15px; /* Increased gap for better separation */
+}
+
+/* Reviewer Image */
+.review-pic {
+  width: 50px; /* Larger profile picture for better visibility */
+  height: 50px;
+  border-radius: 50%;
+  border: 2px solid #3856ff;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.review-pic:hover {
+  transform: scale(1.1); /* Hover effect to make it more interactive */
+}
+
+/* Reviewer Details */
+.review-content h4 {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 600; /* Bold text */
+  color: #333;
+}
+
+.review-content p {
+  margin: 3px 0 0 0;
+  font-size: 0.85rem;
+  color: #777;
+}
+
+/* Right Side: Stars and Date */
+.review-info {
+  display: flex;
+  flex-direction: column; /* Stack stars and date vertically */
+  align-items: flex-end; /* Align content to the right */
+  gap: 5px; /* Space between stars and date */
+}
+
+/* Stars Section */
+.review-info .stars {
+  font-size: 1.3rem; /* Slightly larger stars for better readability */
+  color: #f39c12; /* Star color */
+  display: flex;
+  gap: 3px; /* Add spacing between stars */
+}
+
+/* Date Section */
+.review-info .review-date {
+  font-size: 0.85rem;
+  color: #999;
+}
+
+/* Feedback Section */
+.review-feedback {
+  margin-top: 10px;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #555;
+}
+
+
+/*********************************************
+ * Clinics Section
+ *********************************************/
+
+ .clinics-section {
+  width: 100%;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+.section-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #3856ff;
+}
+
+/* Clinic List */
+.clinic-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+/* Clinic Card */
+.clinic-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px; /* Space between sections */
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.clinic-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Left Section */
+.clinic-left {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* Clinic Name */
+.clinic-name {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #333;
+}
+
+/* Clinic Images */
+.clinic-images {
+  display: flex;
+  gap: 10px; /* Space between images */
+}
+
+.clinic-image {
+  width: 140px;
+  height: 100px;
+  border-radius: 8px;
+  object-fit: cover;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.clinic-image:hover {
+  transform: scale(1.1);
+}
+
+/* Right Section */
+.clinic-right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 15px;
+  justify-content: center;
+  padding-top: 70px;
+}
+
+/* Address */
+.clinic-address {
+  font-size: 0.95rem;
+  color: #555;
+  display: flex;
+  align-items: center;
+  gap: 5px; /* Space between icon and text */
+}
+
+/* Location Icon Button */
+.location-btn {
+  color: #3856ff;
+  font-size: 20px;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.location-btn:hover {
+  color: #4e89ff;
+}
+
+/* Book Now Button */
+.book-now-btn {
+  padding: 8px 15px;
+  background-color: #3856ff;
+  color: white;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+}
+
+.book-now-btn:hover {
+  background-color: #4e89ff;
+}
+
+/* Modal */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.modal.show {
+  opacity: 1;
+}
+
+.modal-content {
+  max-width: 90%;
+  max-height: 90%;
+  border-radius: 8px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+}
+
+.close-btn {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  font-size: 30px;
+  color: white;
+  cursor: pointer;
+}
+
+
+
+
+/* Scroll Buttons */
+.image-controls {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px;
+  background-color: #f8f8f8;
+}
+
+.image-controls button {
+  border: none;
+  background-color: #3856ff;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.image-controls button:hover {
+  background-color: #4e89ff;
+}
+
+/* Clinic Info */
+.clinic-info {
+  padding: 15px;
+}
+
+.clinic-name {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.clinic-address {
+  font-size: 0.9rem;
+  color: #777;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin-bottom: 10px;
+}
+
+/* Rating and Button */
+.clinic-footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 15px;
+  border-top: 1px solid #eee;
+  background-color: #f8f8f8;
+}
+
+.clinic-rating {
+  font-size: 1rem;
+  color: #f39c12;
+}
+
+.book-now-btn {
+  padding: 8px 15px;
+  background-color: #3856ff;
+  color: #fff;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+}
+
+.book-now-btn:hover {
+  background-color: #4e89ff;
+}
+
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .profile-section,
+  .bio-section,
+  .services-section,
+  .reviews-section {
+    width: 100%;
+  }
+
+  .profile-img {
+    width: 90px; /* Smaller size for mobile */
+    height: 90px;
+  }
+
+
+  .review {
+    flex-direction: column; /* Stack elements vertically on smaller screens */
+    align-items: flex-start;
+  }
+  .review-header {
+    flex-direction: column; /* Stack header items vertically */
+    align-items: flex-start; /* Align to the left on mobile */
+  }
+
+  .review-info {
+    margin-top: 10px;
+    text-align: left; /* Align to left for smaller screens */
+  }
+  
+  .review-pic {
+    width: 35px; /* Smaller size for mobile */
+    height: 35px;
+  }
+  
+  .review-info .stars {
+    font-size: 1rem; /* Adjust star size for smaller screens */
+  }
+
+  .book-now-btn {
+    padding: 8px 20px; /* Smaller button */
+    font-size: 0.85rem;
+  }
+
+  .tabs {
+    flex-direction: column; /* Stack tabs vertically */
+    gap: 10px;
+  }
+
+  .tab {
+    width: 100%; /* Full width for mobile */
+    text-align: center;
+  }
+}

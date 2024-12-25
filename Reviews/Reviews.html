@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Doctor Profile</title>
+  <link rel="stylesheet" href="ReviewStyle.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+
+</head>
+<body>
+
+  <!-- Main Container -->
+  <div class="container">
+
+    <!-- Left Section -->
+    <div class="left-section">
+
+      <!-- Profile Section -->
+      <div class="profile-section">
+        <img src="" alt="" id="doctor-image" class="profile-img">
+        <h2 id="doctor-name"></h2>
+        <p id="doctor-designation" class="designation"></p>
+        <div class="ratings">
+          <p id="review-count"></p>
+          <div class="stars" id="doctor-stars"></div>
+        </div>
+        <div class="button-container">
+          <a id="booking-link" target="_blank" class="book-now-btn">Book Now</a>
+        </div>
+      </div>
+
+      <!-- Bio Section -->
+      <div class="bio-section">
+        <h3>About <span id="doctor-name-title"></span></h3>
+        <p id="doctor-bio"></p>
+      </div>
+
+      <!-- Services Section -->
+      <div class="services-section">
+        <h3>Services Offered</h3>
+        <ul class="services-list" id="doctor-services"></ul>
+      </div>
+    </div>
+
+    <!-- Reviews Section -->
+    <div class="reviews-section">
+      <!-- Tabs -->
+      <div class="tabs">
+        <a href="#" class="tab" id="profile-tab">My Profile</a>
+        <a href="#" class="tab" id="clinics-tab">Clinics</a>
+        <a href="#" class="tab active" id="reviews-tab">Reviews</a>
+      </div>
+    
+      <!-- Dynamic Content Container -->
+      <div id="dynamic-content"></div>
+    </div>
+    
+    <!-- imageModa -->
+    <div id="image-modal" class="modal">
+      <span class="close-btn" onclick="closeModal()">&times;</span>
+      <img class="modal-content" id="modal-img">
+    </div>
+    
+
+  </div>
+
+  <script src="ReviewsScript.js"></script>
+</body>
+</html>
