@@ -26,9 +26,9 @@
           <li><a href="#">Home</a></li>
           <li><a href="#">For Doctors</a></li>
           <li><a href="#">Contact Us</a></li>
-          <li><a href="#">Login</a></li>
+          <li><a href="../doctor/signin.html">Login</a></li>
         </ul>
-        <button class="signup-btn">Sign Up</button>
+        <button class="signup-btn"  onclick="openModal()">Sign Up</button>
       </div>
     </nav>
     <div class="hero-section">
@@ -172,8 +172,8 @@
           </div>
         </div>
         <div class="service-grid">
-          <div class="service-grid-icon">
-            <i class="fa fa-ambulance search-icons"></i>
+          <div class="service-grid-icon search-icons">
+            <i class="fa fa-ambulance "></i>
           </div>
           <div class="service-grid-title">
             <span>Emergency Care</span>
@@ -183,8 +183,10 @@
           </div>
         </div>
         <div class="service-grid">
-          <div class="service-grid-icon">
-            <i class="fa fa-robot search-icons"></i>
+          <div class="service-grid-icon search-icons">
+          
+            <i class="fa-solid fa-kit-medical " style="position: relative;
+    left: -2px;"></i>
           </div>
           <div class="service-grid-title">
             <span>AI Consultant for First Aid</span>
@@ -194,8 +196,8 @@
           </div>
         </div>
         <div class="service-grid">
-          <div class="service-grid-icon">
-            <i class="fa-solid fa-user-doctor search-icons"></i>
+          <div class="service-grid-icon search-icons">
+            <i class="fa-solid fa-user-doctor "></i>
           </div>
           <div class="service-grid-title">
             <span>Find a Doctor</span>
@@ -375,6 +377,20 @@
       </div>
     </section>
   </body>
+
+
+  <!-- Sign Up Modal -->
+  <div id="signup-modal" class="modal">
+    <div class="modal-content">
+      <span class="close-btn" onclick="closeModal()">&times;</span>
+      <h2>Sign Up</h2>
+      <p>Please choose your role:</p>
+      <div class="modal-buttons">
+        <a href="../patient/patsignup.html" class="modal-btn">Patient</a>
+        <a href="../doctor/docsignup.html" class="modal-btn">Doctor</a>
+      </div>
+    </div>
+  </div>
   <footer>
     <div class="footer-container">
       <!-- Column 1 -->

@@ -81,7 +81,9 @@ function populateDoctorGrids() {
             <a href="/Reviews/Reviews.html">
               <input class="doc-btn doc-btn-v" type="button" value="View Profile" />
                </a>
+               <a href="/Appointment/Appointment.html">
               <input class="doc-btn doc-btn-b" type="button" value="Book appointment" />
+               </a>
             </div>
           </div>
         `;
@@ -97,3 +99,13 @@ function populateDoctorGrids() {
 
 // Populate doctor grids on page load
 document.addEventListener("DOMContentLoaded", populateDoctorGrids);
+
+// Modal functions
+function openModal() {
+  console.log("serprise");
+  document.getElementById("signup-modal").style.display = "flex";
+}
+
+function closeModal() {
+  document.getElementById("signup-modal").style.display = "none";
+}
