@@ -3,6 +3,10 @@ body {
   background-color: whitesmoke;
   margin: 0;
   font-family: Arial, sans-serif;
+  background: url("../assets/images/signupbg.jpg") no-repeat;
+  /* object-fit: fit;
+  width: 100%; */
+  background-size: cover;
 }
 
 .container {
@@ -60,7 +64,6 @@ h1 {
   width: 90%;
 }
 
-
 .gender h3 {
   margin: 0;
   color: teal;
@@ -97,12 +100,12 @@ p {
 }
 
 p a {
-    text-decoration: none;
+  text-decoration: none;
   color: teal;
   cursor: pointer;
 }
-.check{
-    accent-color: teal;
+.check {
+  accent-color: teal;
 }
 
 /* Media Queries */
@@ -110,7 +113,7 @@ p a {
   .form {
     width: 70%;
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(7,auto);
+    grid-template-rows: repeat(7, auto);
 
     height: 70vh;
   }
@@ -120,12 +123,9 @@ p a {
   .gender {
     grid-column: span 2;
   }
- 
-  .btn{
+
+  .btn {
     width: fit-content;
     justify-self: start;
   }
- 
 }
-
-
