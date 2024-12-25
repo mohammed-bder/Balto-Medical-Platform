@@ -430,7 +430,8 @@ body {
     }
 
     .doctor-card .card-body .specialty,
-    .doctor-card .card-body .fee {
+    .doctor-card .card-body .fee ,
+    .doctor-card .card-body .experience {
         font-size: 14px;
     }
 
@@ -478,9 +479,13 @@ body {
     }
 
     .doctor-card .card-body .specialty,
-    .doctor-card .card-body .fee,
-    .doctor-card .card-body .rating {
+    .doctor-card .card-body .fee
+    {
         font-size: 14px;
+    }
+    .doctor-card .card-body .rating 
+    {
+        font-size: 20px;
     }
 }
 
@@ -498,7 +503,7 @@ body {
     }
 
     .filter-toggle {
-        display: block !important;
+        display: block;
     }
     .filter-box h4 {
         font-size: 20px;
@@ -522,10 +527,16 @@ body {
         flex-direction: column;
     }
 
-
+    .filter-bar
+    {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    
     .sort-section {
-        flex-direction: column !important;
-        align-items: flex-start !important;
+        flex-direction: row;
+        align-items: center;
     }
     
     .sort-label,
