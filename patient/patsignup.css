@@ -3,10 +3,11 @@ body {
   background-color: whitesmoke;
   margin: 0;
   font-family: Arial, sans-serif;
-  background: url("../assets/images/signupbg.jpg") no-repeat;
-  /* object-fit: fit;
+  background: url("../assets/images/homes.jpg") no-repeat;
+  /* object-fit: contain;
   width: 100%; */
-  background-size: cover;
+  background-size: contain;
+  backdrop-filter: blur(20px);
 }
 
 .container {

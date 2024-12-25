@@ -1,7 +1,12 @@
 body {
   background-color: whitesmoke;
   margin: 0;
-  padding: 0;
+  font-family: Arial, sans-serif;
+  background: url("../assets/images/homes.jpg") no-repeat;
+  /* object-fit: contain;
+  width: 100%; */
+  background-size: contain;
+  backdrop-filter: blur(20px);
 }
 
 .container {
@@ -23,7 +28,6 @@ body {
   grid-template-rows: repeat(3, 0.5fr);
   gap: 20px;
   background-color: white;
-  
 }
 
 h1 {
@@ -56,15 +60,14 @@ h1 {
   border: none;
   font-size: 18px;
   box-shadow: 4px 4px 10px rgba(0.1, 0.1, 0.1, 0.2);
-  width:fit-content;
+  width: fit-content;
   height: fit-content;
-  
 }
-.signup{
+.signup {
   color: teal;
   text-decoration: none;
 }
-p{
+p {
   justify-self: end;
 }
 /* Media Queries */
