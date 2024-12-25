@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sign Up</title>
+  <link rel="stylesheet" href="docsignup.css" />
+</head>
+<body>
+  <div class="container">
+    <div class="form">
+      <h1><span class="title">SignUp</span> Form</h1>
+      <input type="text" placeholder="Enter your name" class="field" />
+      <input type="text" placeholder="Enter your Email" class="field" />
+      <input type="password" placeholder="Enter your password" class="field" />
+      <div class="gender">
+        <h3>Gender</h3>
+        <label>Male <input type="radio" name="gender" class="check" /></label>
+        <label>Female <input type="radio" name="gender" class="check" /></label>
+      </div>
+      <select id="dropdown" class="field">
+        <option style="color: gray">Select your specialization</option>
+        <option value="option1">Option 1</option>
+        <option value="option2">Option 2</option>
+        <option value="option3">Option 3</option>
+      </select>
+      <input type="text" placeholder="Enter your appointment fee" class="field" />
+      <button class="upload">Upload your license</button>
+      <div id="policy">
+        <input type="checkbox" class="check" />
+        <label>I agree to the <span>Terms & Privacy Policy</span></label>
+      </div>
+      <button class="btn">Sign Up</button>
+      <p>Already have an account? <span>Log In</span></p>
+    </div>
+  </div>
+</body>
+</html>
