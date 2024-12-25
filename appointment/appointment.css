@@ -1,0 +1,207 @@
+
+body{
+    background-color:white;
+    padding: 0px;
+    margin: 0px;    
+}
+*{
+    box-sizing: border-box;
+}
+
+.container{
+    
+    width: 100%;
+    justify-items: center;
+    
+}
+
+.forms{
+    display: grid;
+    grid-template-columns:repeat(2,1fr);
+    grid-template-rows:repeat(6,auto);
+    font-weight: 600;
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 4px 4px 10px rgba(0.1, 0.1, 0.1, 0.2);
+    height: fit-content;
+}
+.header{
+    width: 100%;
+}
+.title{
+    grid-column: span 2;
+    border-bottom: 1px teal solid;
+    padding-bottom: 5px;
+    width: fit-content;
+}
+.formfield{
+    margin: 20px;
+    
+}
+.lbl{
+    display: block;
+    margin-bottom: 10px;
+    color: rgb(100, 100, 100);
+    font-size: 18px;
+}
+.fields{
+    border-radius: 8px;
+    border:1px solid teal;
+    padding:10px;
+    margin-bottom: 20px;
+    height: 50px;
+    font-size: 17px;
+    width: 80%;
+}
+.grid{
+    position: relative;
+    bottom: 10vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 40px;
+    width: 90%;
+    height: fit-content;
+}
+.doccard{
+    text-align: center;
+    align-content: center;
+    justify-items: center;
+    font-size: 20px;
+
+}
+.ph{
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
+    background-image: url("../images/1.jpeg");
+    background-size: cover;
+}
+.circle{
+    height: 170px;
+    width: 170px;
+    border-radius: 100%;
+    background-color: white;
+    justify-items: center;
+    align-content: center;
+}
+.doctop{
+    justify-items: center;
+    text-align: center;
+    line-height: 9px;
+}
+.btn{
+    background-color: teal;
+    padding: 20px;
+    border-radius: 20px;
+    color: white;
+    box-shadow: 4px 4px 10px rgba(0.1, 0.1, 0.1, 0.2);
+    width: fit-content;
+    height: fit-content;
+    align-self: end;
+    justify-self: end;
+    grid-column: span 2;
+}
+.clinic{
+    padding: 20px;
+    border-radius: 5px;
+    font-weight: 600;
+    width: 100%;
+    grid-column: span 2;
+}
+.clinicItem{
+    border: 1px solid gray;
+    background-color: white;
+    border-radius: 20px;
+    padding: 15px;
+    font-size: 18px;
+    margin: 10px;
+    cursor: pointer;
+}
+.clinicItem.selected {
+    background-color: teal;
+    color: white;
+    box-shadow: 0 0 10px rgba(0, 128, 128, 0.5); 
+  }
+
+
+.clinicItem:hover{
+    background-color: teal;
+    color: white;
+    box-shadow: 4px 4px 10px rgba(0.1, 0.1, 0.1, 0.3);
+}
+.only{
+    justify-self: start;
+    grid-column: span 2;
+}
+.spn{
+    border-bottom: 1px solid teal;
+    padding-bottom: 2px;
+}
+
+.list{
+    display: flex;
+    width: 100%;
+}
+.bodyGrid{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+@media (max-width: 768px) {
+    .grid {
+      grid-template-columns: 1fr; 
+      gap: 20px;
+    }
+  
+    .forms {
+      grid-template-columns: 1fr; 
+      grid-template-rows: repeat(4, auto);
+    }
+    .formfield{
+        grid-column: span 2;
+    }
+  
+    .fields {
+      width: 100%; 
+    }
+  
+    .doccard {
+      font-size: 18px; 
+    }
+  
+    .bodyGrid {
+      grid-template-columns: 1fr; 
+    }
+    .list{
+        flex-direction: column;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .forms {
+      padding: 10px; 
+    }
+  
+    .fields {
+      padding: 8px;
+      font-size: 14px;
+    }
+  
+    .btn {
+      padding: 10px;
+      font-size: 14px; 
+    }
+  
+    .clinicItem {
+      font-size: 16px; 
+      padding: 10px;
+    }
+  
+    .doccard {
+      font-size: 16px; 
+    }
+    .list{
+        flex-direction: column;
+    }
+  }

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Appointment</title>
+    <link rel="stylesheet" href="../appointment/appointment.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <img
+          src="../images/banner-bg.png"
+          alt="image"
+          width="100%"
+          height="400px"
+        />
+      </div>
+      <div class="grid">
+        <div class="doccard">
+          <div class="doctop">
+            <div class="circle"><div class="ph"></div></div>
+
+            <h3 style="color: black">Mohamed Fayez</h3>
+            <p>22 Years, Male</p>
+            <p>Dintist</p>
+          </div>
+        </div>
+        <div class="forms">
+          <h2 class="title">
+            Patient <span style="color: teal">Information</span>
+          </h2>
+          <div class="formfield">
+            <label class="lbl">First Name</label>
+            <input type="text" class="fields" placeholder="Enter first name" />
+          </div>
+          <div class="formfield">
+            <label class="lbl">Last Name</label>
+            <input type="text" class="fields" placeholder="Enter last name" />
+          </div>
+          <div class="formfield">
+            <label class="lbl">Phone</label>
+            <input type="text" class="fields" placeholder="Enter phone" />
+          </div>
+          <div class="formfield">
+            <label class="lbl">Age</label>
+            <input type="number" class="fields" placeholder="Enter Age" />
+          </div>
+
+          <div class="formfield only">
+            <label class="lbl">Date</label>
+            <input
+              type="text"
+              class="fields"
+              value="18/5/2025 4pm"
+              readonly="true"
+            />
+          </div>
+          <div class="clinic">
+            <h2 class="title">Choose <span style="color: teal">Clinic</span></h2>
+            <ul style="list-style-type: none" class="list">
+              <li class="clinicItem">
+                <h3><span class="spn">Name :</span> Dr/Ahmed Clinic</h3>
+                <h3>
+                  <span class="spn" >Address :</span> Tanta , Algharbia
+                </h3>
+              </li>
+              <li class="clinicItem">
+                <h3><span class="spn">Name :</span> Dr/Ahmed Clinic</h3>
+                <h3>
+                  <span class="spn" >Address :</span> Tanta , Algharbia
+                </h3>
+              </li>
+              <li class="clinicItem">
+                <h3><span class="spn">Name :</span> Dr/Ahmed Clinic</h3>
+                <h3>
+                  <span class="spn" >Address :</span> Tanta , Algharbia
+                </h3>
+              </li>
+              <li class="clinicItem">
+                <h3><span class="spn">Name :</span> Dr/Ahmed Clinic</h3>
+                <h3>
+                  <span class="spn" >Address :</span> Tanta , Algharbia
+                </h3>
+              </li>
+            </ul>
+          </div>
+          <div class="btn">Make Appointment</div>
+        </div>
+      </div>
+    </div>
+    <script src="../appointment/script.js"></script>
+  </body>
+</html>
