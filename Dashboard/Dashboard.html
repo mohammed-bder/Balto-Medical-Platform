@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="Dashboard.css">
+</head>
+<body>
+    <nav>
+        <div class="sidebar" id="sidebar">
+            <div class="collapse-button">
+                <h2 class="sidebar-title">Dashboard</h2>
+                <button onclick="toggleSidebar()">☰</button>
+            </div>
+            <div class="nav-item profile">
+                <img src="./assets/images/ME.jpg" alt="Profile Picture" class="profile-pic">
+                <span class="profile-name">Dr Ibrahim</span>
+            </div>
+            <div class="nav-items">
+                <a href="#overview" class="nav-item">
+                    <i class="fas fa-chart-pie"></i>
+                    <span>Overview</span>
+                </a>
+                <a href="#appointments" class="nav-item">
+                    <i class="fas fa-calendar-alt"></i>
+                    <span>Appointments</span>
+                </a>
+                <a href="#patients" class="nav-item">
+                    <i class="fas fa-user-injured"></i>
+                    <span>Patients</span>
+                </a>
+                <a href="#messages" class="nav-item">
+                    <i class="fas fa-envelope"></i>
+                    <span>Messages</span>
+                </a>
+                <a href="#settings" class="nav-item">
+                    <i class="fas fa-cogs"></i>
+                    <span>Settings</span>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <header>
+        <div class="search-bar">
+            <!-- <h1>Welcome Back</h1> -->
+            <input type="text" placeholder="Search...">
+        </div>
+    </header>
+
+    
+
+    <main>
+        
+        <section id="appointments" class="card appointments">
+            <i class="fas fa-calendar-alt"></i>
+            <div class="card-content">
+                <h2>121.5K</h2>
+                <p>Appointments</p>
+                <a href="#" class="btn">Manage Appointments</a>
+            </div>
+        </section>
+        <section id="Totalpatients" class="card Totalpatients">
+            <i class="fas fa-user-injured"></i>
+            <div class="card-content">
+                <h2>24.5K</h2>
+                <p>Patients</p>
+                <a href="#" class="btn">View Details</a>
+            </div>
+        </section>
+        <section id="ClinicConsulting" class="card ClinicConsulting">
+            <i class="fas fa-stethoscope"></i>
+            <div class="card-content">
+                <h2>18K</h2>
+                <p>Clinic Consulting</p>
+                <a href="#" class="btn">View Details</a>
+            </div>
+        </section>
+        <section id="VideoConsulting" class="card VideoConsulting">
+            <i class="fas fa-video"></i>
+            <div class="card-content">
+                <h2>6.5K</h2>
+                <p>Video Consulting</p>
+                <a href="#" class="btn">View Details</a>
+            </div>
+        </section>
+        <section id="VideoConsulting" class="card VideoConsulting">
+            <i class="fas fa-video"></i>
+            <div class="card-content">
+                <h2>6.5K</h2>
+                <p>Video Consulting</p>
+                <a href="#" class="btn">View Details</a>
+            </div>
+        </section>
+                <section id="VideoConsulting" class="card VideoConsulting">
+            <i class="fas fa-video"></i>
+            <div class="card-content">
+                <h2>6.5K</h2>
+                <p>Video Consulting</p>
+                <a href="#" class="btn">View Details</a> 
+            </div>
+        </section>
+
+        <div class="container">
+            <div id="appointment-requests">
+                <h3>Appointment Requests</h3>
+                <ul id="request-list"></ul>
+            </div>
+            <div id="today-appointments">
+                <h3>Today Appointments</h3>
+                <ul id="today-list"></ul>
+            </div>
+        </div>
+    </main>
+
+
+
+    <script src="Dashboard.js"></script>
+</body>
+</html>

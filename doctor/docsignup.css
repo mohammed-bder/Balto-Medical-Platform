@@ -113,7 +113,7 @@ body {
     color: teal;
     cursor: pointer;
   }
-  
+
   /* Media Queries */
   @media screen and (max-width: 900px) {
     .form {
@@ -167,4 +167,3 @@ body {
       font-size: 12px;
     }
   }
-  

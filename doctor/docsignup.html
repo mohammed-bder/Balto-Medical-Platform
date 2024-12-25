@@ -4,9 +4,27 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Sign Up</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
   <link rel="stylesheet" href="docsignup.css" />
+  <link rel="stylesheet" href="../Shared/Shared_Style.css">
 </head>
 <body>
+  <nav class="navbar">
+    <div class="logo">
+      <!-- <img src="https://via.placeholder.com/100x30" alt="Vezeeta Logo" /> -->
+      <span>Balto</span>
+    </div>
+    <div class="nav-content">
+      <ul class="nav-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">For Doctors</a></li>
+        <li><a href="#">Contact Us</a></li>
+        <li><a href="../doctor/signin.html">Login</a></li>
+      </ul>
+      <button class="signup-btn"  onclick="openModal()">Sign Up</button>
+    </div>
+  </nav>
+
   <div class="container">
     <div class="form">
       <h1><span class="title">SignUp</span> Form</h1>
@@ -34,5 +52,70 @@
       <p>Already have an account? <span>Log In</span></p>
     </div>
   </div>
+
+  <footer>
+    <div class="footer-container">
+      <!-- Column 1 -->
+      <div class="footer-column">
+        <h1>Balto</h1>
+        <ul>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Our Team</a></li>
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">Press</a></li>
+        </ul>
+      </div>
+
+      <!-- Column 2 -->
+      <div class="footer-column">
+        <h3>Search By</h3>
+        <ul>
+          <li><a href="#">Speciality</a></li>
+          <li><a href="#">Area</a></li>
+          <li><a href="#">Insurance</a></li>
+          <li><a href="#">Hospital</a></li>
+          <li><a href="#">Center</a></li>
+        </ul>
+      </div>
+
+      <!-- Column 3 -->
+      <div class="footer-column">
+        <h3>Are You A Doctor?</h3>
+        <ul>
+          <li><a href="#">Join Balto Doctors</a></li>
+        </ul>
+      </div>
+
+      <!-- Column 4 -->
+      <div class="footer-column">
+        <h3>Need Help?</h3>
+        <ul>
+          <li><a href="#">Medical Library</a></li>
+          <li><a href="#">Contact Us</a></li>
+          <li><a href="#">Terms of Use</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Doctors Privacy Policy</a></li>
+        </ul>
+      </div>
+
+      <!-- Column 5 -->
+      <div class="footer-column">
+        <h3>Download Our App</h3>
+        <div class="app-links">
+          <a href="#">
+            <img src="../assets/images/gp.png" alt="Google Play" />
+          </a>
+          <a href="#">
+            <img src="../assets/images/as.png" alt="App Store" />
+          </a>
+        </div>
+        <div class="social-icons">
+          <a href="#"><i class="fa-brands fa-facebook"></i></a>
+          <a href="#"><i class="fa-brands fa-instagram"></i></i></a>
+          <a href="#"><i class="fa-brands fa-twitter"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
 </body>
 </html>

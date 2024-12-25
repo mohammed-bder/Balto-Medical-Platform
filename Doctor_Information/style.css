@@ -35,7 +35,7 @@ body {
 /* Filter Box Style */
 .filter-box {
     position: fixed;
-    top: 43px;
+    top: 105px;
     width: 300px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     border-radius: 12px;
@@ -407,6 +407,7 @@ body {
         background-color: #ffffff;
         left: 30px;
         margin: auto;
+        top: 130px;
     }
 
     .doctor-card {
@@ -430,7 +431,8 @@ body {
     }
 
     .doctor-card .card-body .specialty,
-    .doctor-card .card-body .fee {
+    .doctor-card .card-body .fee ,
+    .doctor-card .card-body .experience {
         font-size: 14px;
     }
 
@@ -449,6 +451,7 @@ body {
         padding: 10px;
         background-color: #ffffff;
         left: 20px;
+        top: 130px;
     }
     .filter-box h4 {
         font-size: 20px;
@@ -478,9 +481,13 @@ body {
     }
 
     .doctor-card .card-body .specialty,
-    .doctor-card .card-body .fee,
-    .doctor-card .card-body .rating {
+    .doctor-card .card-body .fee
+    {
         font-size: 14px;
+    }
+    .doctor-card .card-body .rating 
+    {
+        font-size: 20px;
     }
 }
 
@@ -498,7 +505,8 @@ body {
     }
 
     .filter-toggle {
-        display: block !important;
+        display: block;
+        top: 85px;
     }
     .filter-box h4 {
         font-size: 20px;
@@ -509,7 +517,7 @@ body {
     .filter-box.active {
         display: block !important;
         position: fixed !important;
-        top: 68px !important;
+        top: 130px !important;
         left: 20px !important;
         width: 230px !important;
         z-index: 2000 !important;
@@ -522,10 +530,16 @@ body {
         flex-direction: column;
     }
 
-
+    .filter-bar
+    {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    
     .sort-section {
-        flex-direction: column !important;
-        align-items: flex-start !important;
+        flex-direction: row;
+        align-items: center;
     }
     
     .sort-label,

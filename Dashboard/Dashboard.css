@@ -1,0 +1,447 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+}
+
+/* Header */
+header {
+    background-color: rgb(24, 23, 23);
+
+    /* background-color: #007bff; */
+    color: white;
+    padding: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .search-bar {
+    flex: 1;
+    margin: 0 0 0 350px;
+}
+
+header .search-bar input {
+    width: 70%;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+/* Sidebar */
+
+
+.sidebar {
+    width: 250px;
+    background-color: #007bff;
+
+    /* background-color: #1e90ff; original */
+    color: white;
+    position: fixed;
+    height: 100%;
+    transition: width 0.3s ease;
+    overflow: hidden;
+}
+
+.sidebar.collapsed {
+    width: 80px;
+}
+
+/* Collapse Button */
+.collapse-button {
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px;
+    /* background: #1e90ff; */
+    border-bottom: 1px solid #575757;
+}
+
+.collapse-button button {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+/* Profile Section */
+.profile {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #575757;
+    transition: all 0.3s ease;
+}
+
+.sidebar.collapsed .profile .profile-name {
+    display: none;
+}
+
+.profile-pic {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.profile-name {
+    font-size: 1.2em;
+}
+
+/* Navigation Items */
+.nav-items {
+    margin-top: 10px;
+}
+
+.collapse-button h2 {
+    position: fixed;
+    margin: 0px 5px;
+    padding: 5px;
+    left: 0px;
+    align-items: center;
+
+}
+
+.nav-item {
+    display: flex;
+    align-items: center;
+    color: white;
+    font-size: larger;
+    text-decoration: none;
+    padding: 10px;
+    margin: 5px 0;
+    transition: background 0.3s ease;
+}
+
+.nav-item:hover {
+    background: #82c3f8;
+}
+
+.nav-item i {
+    margin-right: 10px;
+}
+
+.sidebar.collapsed .nav-item span {
+    display: none;
+}
+
+/* Main Content */
+main {
+    margin-left: 250px;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.sidebar.collapsed + main {
+    margin-left: 80px;
+}
+
+/* Cards */
+.card {
+    color: #007bff;
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center; /* Vertically align items */
+   
+    height: 120px;
+}
+.card-content, .card i
+{
+    margin-left: 28px;
+    align-items: center; /* Vertically align items */
+
+    justify-content: center;
+}
+/* Icon styles */
+.card i {
+    font-size: 40px;
+    margin-right:10px; /* Space between icon and content */
+    margin-bottom: 20px;
+    color: rgba(0, 123, 255, 0.8); /* Icon color matching the theme */
+}
+
+/* Content alignment */
+.card h2 {
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-size: 2rem;
+    text-align: center; /* Align text to the left */
+}
+
+.card p {
+    margin: 0;
+    text-align: center;
+    color: #555;
+}
+
+/* Button */
+.btn {
+    display: inline-block;
+    padding: 10px 15px;
+    background: red;
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+    margin-top: 10px;
+    font-weight: bold;
+justify-content: center;}
+
+.btn:hover {
+    background: #de321f;
+}
+
+/* Specific card backgrounds */
+.appointments {
+    background: palegreen;
+}
+
+.Totalpatients {
+    background: peachpuff;
+}
+
+.ClinicConsulting {
+    background: rgb(217, 142, 217);
+}
+
+.VideoConsulting {
+    background: paleturquoise;
+}
+.AppointmentsRequests {
+    background: rgb(1, 126, 126);
+}
+
+
+
+
+
+/* Styling for the individual lists */
+.PendingRequests, .TodayRequests {
+    width: 48%; /* Make each section take up 48% of the container width */
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+/* Styling for the list itself */
+/* 
+.container {
+
+    display: grid;
+    grid-template-columns: repeat(2, minmax(603px, 1fr));
+    gap: 20px;
+    justify-content: space-between;
+  }
+
+  #appointment-requests, #today-appointments {
+    background: white;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    flex: 1;
+    
+  }
+
+  h3 {
+    margin-top: 0;
+    color: #333;
+    text-align: center;
+  }
+
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+
+  li {
+    margin: 10px 0;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-radius: 4px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  li:nth-child(odd) {
+    background-color: #e9ecef;
+  }
+
+  .button-container {
+    display: flex;
+    gap: 10px;
+  }
+
+  button {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  button.confirm {
+    background-color: #28a745;
+    color: white;
+  }
+
+  button.decline {
+    background-color: #dc3545;
+    color: white;
+  }
+
+  .today-item {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .name {
+    font-weight: bold;
+  }
+
+  .type,
+  .time {
+    color: #666;
+    font-size: 0.9em;
+  } */
+
+/* General Container */
+.container {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(603px, 1fr));
+    gap: 20px;
+    justify-content: space-between;
+}
+
+/* Card Styles */
+#appointment-requests, #today-appointments {
+    background: white;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Headers */
+h3 {
+    margin-top: 0;
+    color: #333;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+/* List Styling */
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    margin: 10px 0;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+li:nth-child(odd) {
+    background-color: #e9ecef;
+}
+
+/* Appointment Request Details */
+li div {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+/* Text Styling */
+.name {
+    font-weight: bold;
+    color: #333;
+}
+
+.type, .date, .time, .status {
+    font-size: 0.9rem;
+    color: #666;
+}
+
+/* Status Styles */
+.status {
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+.status.pending {
+    color: #ffc107;
+}
+
+.status.confirmed {
+    color: #28a745;
+}
+
+.status.declined {
+    color: #dc3545;
+}
+
+/* Buttons */
+.button-container {
+    display: flex;
+    gap: 10px;
+}
+
+button {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
+button.confirm {
+    background-color: #28a745;
+    color: white;
+}
+
+button.confirm:hover {
+    background-color: #218838;
+}
+
+button.decline {
+    background-color: #dc3545;
+    color: white;
+}
+
+button.decline:hover {
+    background-color: #c82333;
+}
+
+/* Today Appointments */
+.today-item {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.today-item .name {
+    font-weight: bold;
+    color: #333;
+}
+
+.today-item .type,
+.today-item .time {
+    font-size: 0.9rem;
+    color: #666;
+}
+
