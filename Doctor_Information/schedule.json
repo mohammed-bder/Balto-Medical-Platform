@@ -1,0 +1,70 @@
+{
+    "Dr. John Doe": [
+        {
+            "date": "Today",
+            "type": "today",
+            "slots": []
+        },
+        {
+            "date": "Tomorrow",
+            "type": "tomorrow",
+            "slots": ["From 12:00 PM - To 1:30 PM", "From 1:30 PM - To 2:00 PM", "From 2:00 PM - To 3:30 PM", "From 4:00 PM - To 5:30 PM", "From 6:00 PM - To 7:30 PM"]
+        },
+        {
+            "date": "12/25 Wednesday",
+            "type": "other",
+            "slots": ["From 10:00 AM - To 11:30 AM", "From 12:00 PM - To 1:30 PM", "From 2:00 PM - To 3:30 PM", "From 4:00 PM - To 5:30 PM"]
+        }
+    ],
+    "Dr. Jane Smith": [
+        {
+            "date": "Today",
+            "type": "today",
+            "slots": ["From 9:00 AM - To 10:30 AM", "From 11:00 AM - To 12:30 PM"]
+        },
+        {
+            "date": "Tomorrow",
+            "type": "tomorrow",
+            "slots": ["From 1:00 PM - To 2:30 PM", "From 3:00 PM - To 4:30 PM"]
+        },
+        {
+            "date": "saturday",
+            "type": "other",
+            "slots": ["From 10:00 AM - To 11:30 AM", "From 12:00 PM - To 1:30 PM"]
+        }
+    ],
+    "Dr. Emily Johnson": [
+        {
+            "date": "Today",
+            "type": "today",
+            "slots": ["From 8:00 AM - To 9:30 AM", "From 10:00 AM - To 11:30 AM"]
+        },
+        {
+            "date": "Tomorrow",
+            "type": "tomorrow",
+            "slots": ["From 2:00 PM - To 3:30 PM", "From 4:00 PM - To 5:30 PM"]
+        },
+        {
+            "date": "sunday",
+            "type": "other",
+            "slots": ["From 9:00 AM - To 10:30 AM", "From 11:00 AM - To 12:30 PM"]
+        }
+    ],
+    "Dr. Michael Brown": [
+        {
+            "date": "Today",
+            "type": "today",
+            "slots": ["From 7:00 AM - To 8:30 AM", "From 9:00 AM - To 10:30 AM"]
+        },
+        {
+            "date": "Tomorrow",
+            "type": "tomorrow",
+            "slots": ["From 3:00 PM - To 4:30 PM", "From 5:00 PM - To 6:30 PM"]
+        },
+        {
+            "date": "12/25 Wednesday",
+            "type": "other",
+            "slots": ["From 8:00 AM - To 9:30 AM", "From 10:00 AM - To 11:30 AM"]
+        }
+    ]
+}

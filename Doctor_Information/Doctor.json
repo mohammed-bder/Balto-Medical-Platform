@@ -1,0 +1,42 @@
+[
+    {
+        "name": "Dr. John Doe",
+        "specialty": "Cardiologist",
+        "fee": "$100",
+        "rating": 4,
+        "location": "New York, NY",
+        "experience": "10 years of experience",
+        "contact": "(123) 456-7890",
+        "image": "Images/Doctor.png"
+    },
+    {
+        "name": "Dr. Jane Smith",
+        "specialty": "Dermatologist",
+        "fee": "$150",
+        "rating": 5,
+        "location": "Los Angeles, CA",
+        "experience": "8 years of experience",
+        "contact": "(987) 654-3210",
+        "image": "Images/Doctor2.png"
+    },
+    {
+        "name": "Dr. Emily Johnson",
+        "specialty": "Pediatrician",
+        "fee": "$120",
+        "rating": 4.5,
+        "location": "Chicago, IL",
+        "experience": "12 years of experience",
+        "contact": "(555) 123-4567",
+        "image": "Images/Doctor3.png"
+    },
+    {
+        "name": "Dr. Michael Brown",
+        "specialty": "Neurologist",
+        "fee": "$200",
+        "rating": 4.8,
+        "location": "Houston, TX",
+        "experience": "15 years of experience",
+        "contact": "(444) 987-6543",
+        "image": "Images/Doctor.png"
+    }
+]
