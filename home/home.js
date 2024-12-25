@@ -78,7 +78,9 @@ function populateDoctorGrids() {
               <span>⭐⭐⭐⭐ ${doctor.rating} (${doctor.reviews} reviews)</span>
             </div>
             <div class="doctor-grid-dr-action">
+            <a href="/Reviews/Reviews.html">
               <input class="doc-btn doc-btn-v" type="button" value="View Profile" />
+               </a>
               <input class="doc-btn doc-btn-b" type="button" value="Book appointment" />
             </div>
           </div>
