@@ -35,7 +35,7 @@ body {
 /* Filter Box Style */
 .filter-box {
     position: fixed;
-    top: 43px;
+    top: 105px;
     width: 300px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     border-radius: 12px;
@@ -407,6 +407,7 @@ body {
         background-color: #ffffff;
         left: 30px;
         margin: auto;
+        top: 130px;
     }
 
     .doctor-card {
@@ -450,6 +451,7 @@ body {
         padding: 10px;
         background-color: #ffffff;
         left: 20px;
+        top: 130px;
     }
     .filter-box h4 {
         font-size: 20px;
@@ -504,6 +506,7 @@ body {
 
     .filter-toggle {
         display: block;
+        top: 85px;
     }
     .filter-box h4 {
         font-size: 20px;
@@ -514,7 +517,7 @@ body {
     .filter-box.active {
         display: block !important;
         position: fixed !important;
-        top: 68px !important;
+        top: 130px !important;
         left: 20px !important;
         width: 230px !important;
         z-index: 2000 !important;

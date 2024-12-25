@@ -85,7 +85,7 @@ body {
 
 /* =======  header =======*/
 
-.navbar {
+/* .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -144,7 +144,7 @@ body {
 
 .signup-btn:hover {
   background-color: var(--dark-color);
-}
+} */
 
 /* =======  first section =======*/
 
@@ -473,7 +473,8 @@ body {
 .doc-btn-b {
   background-color: var(--primary-color);
 }
-footer {
+
+/* footer {
   background-color: var(--dark-color);
   color: white;
   padding: 20px 0;
@@ -552,7 +553,7 @@ footer {
   .social-icons {
     justify-content: center;
   }
-}
+} */
 
 /* Media queries for responsiveness */
 
