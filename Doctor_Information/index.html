@@ -5,23 +5,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Medical System</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../Shared/Shared_Style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 </head>
 <body>
+
+    <nav class="navbar">
+        <div class="nav-header">
+  
+            <div class="logo">
+              <span>Balto</span>
+            </div>
+            <div class="menu-toggle">
+              <i class="fa fa-bars"></i>
+            </div>
+          </div>
+        <div class="nav-content">
+          <ul class="nav-links">
+            <li><a href="../home/home.html">Home</a></li>
+            <li><a href="../doctor/docsignup.html">For Doctors</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="../doctor/signin.html">Login</a></li>
+          </ul>
+          <button class="signup-btn"  onclick="openModal()">Sign Up</button>
+        </div>
+    </nav>
+
     <div class="container mt-4">
+      
         <!-- Filter Box -->
         <div class="row">
             <div class="col-md-3">
-                <button class="filter-toggle" onclick="toggleFilterBox()">Filter</button>
+                <button class="filter-toggle" onclick="toggleFilterBox()"><i class="fa-solid fa-filter"></i></button>
                 <div class="filter-box">
                     <h4><i class="fa-solid fa-filter"></i> Filter</h4>
                     <div class="filter-group">
                         <div class="dropdown">
                             <button class="dropdown-toggle"><i class="fa-solid fa-venus-mars"></i> Gender</button>
                             <div class="dropdown-content">
-                                <label><input type="checkbox" id="male"> Male</label>
-                                <label><input type="checkbox" id="female"> Female</label>
+                                <label><input type="checkbox" id="male" onclick="toggleGender('male')"> Male</label>
+                                <label><input type="checkbox" id="female" onclick="toggleGender('female')"> Female</label>
                             </div>
                         </div>
                     </div>
@@ -63,7 +87,6 @@
 
             <!-- Doctor Cards -->
             <div class="col-md-9">
-                
                 <div class="filter-bar">
                     <div class="sort-section">
                         <label for="sort" class="sort-label">Sort:</label>
@@ -87,130 +110,73 @@
         </div>
     </div>
 
+    <footer>
+        <div class="footer-container">
+          <!-- Column 1 -->
+          <div class="footer-column">
+            <h1>Balto</h1>
+            <ul>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Our Team</a></li>
+              <li><a href="#">Careers</a></li>
+              <li><a href="#">Press</a></li>
+            </ul>
+          </div>
+    
+          <!-- Column 2 -->
+          <div class="footer-column">
+            <h3>Search By</h3>
+            <ul>
+              <li><a href="#">Speciality</a></li>
+              <li><a href="#">Area</a></li>
+              <li><a href="#">Insurance</a></li>
+              <li><a href="#">Hospital</a></li>
+              <li><a href="#">Center</a></li>
+            </ul>
+          </div>
+    
+          <!-- Column 3 -->
+          <div class="footer-column">
+            <h3>Are You A Doctor?</h3>
+            <ul>
+              <li><a href="#">Join Balto Doctors</a></li>
+            </ul>
+          </div>
+    
+          <!-- Column 4 -->
+          <div class="footer-column">
+            <h3>Need Help?</h3>
+            <ul>
+              <li><a href="#">Medical Library</a></li>
+              <li><a href="#">Contact Us</a></li>
+              <li><a href="#">Terms of Use</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Doctors Privacy Policy</a></li>
+            </ul>
+          </div>
+    
+          <!-- Column 5 -->
+          <div class="footer-column">
+            <h3>Download Our App</h3>
+            <div class="app-links">
+              <a href="#">
+                <img src="../assets/images/gp.png" alt="Google Play" />
+              </a>
+              <a href="#">
+                <img src="../assets/images/as.png" alt="App Store" />
+              </a>
+            </div>
+            <div class="social-icons">
+              <a href="#"><i class="fa-brands fa-facebook"></i></a>
+              <a href="#"><i class="fa-brands fa-instagram"></i></i></a>
+              <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            </div>
+          </div>
+        </div>
+      </footer>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
     <script src="script.js"></script>
+    <script src="../Shared/Shared_Script.js"></script>
 </body>
 </html>
-
-
-
-
-
-
-<!-- 
-/* Responsive Design */
-@media (max-width: 1200px) {
-    .filter-box {
-        position: static;
-        width: 100%;
-        margin-bottom: 20px;
-        box-shadow: none;
-    }
-    
-    .container.mt-4 {
-        margin-left: 0;
-    }
-
-    .doctor-card {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .doctor-card img {
-        margin-bottom: 15px;
-        width: 80px;
-        height: 80px;
-    }
-    
-    .doctor-card .card-body {
-        width: 100%;
-        text-align: center;
-    }
-
-    .doctor-card .card-body h5 {
-        font-size: 20px;
-    }
-
-    .doctor-card .card-body .specialty,
-    .doctor-card .card-body .fee,
-    .doctor-card .card-body .rating {
-        font-size: 14px;
-    }
-}
-
-@media (max-width: 992px) {
-    .filter-box {
-        padding: 15px;
-    }
-
-    .schedule-carousel {
-        flex-direction: column;
-        gap: 10px;
-    }
-
-    .schedule-arrow {
-        display: none;
-    }
-
-    .day-column {
-        flex: none;
-        width: 100%;
-        margin-bottom: 15px;
-    }
-
-    .book-btn {
-        padding: 8px 0;
-        font-size: 12px;
-    }
-}
-
-@media (max-width: 768px) {
-    .filter-box {
-        width: 100%;
-    }
-    
-    .doctor-card {
-        padding: 15px;
-        margin-bottom: 20px;
-    }
-
-    .sort-section {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-    
-    .sort-label,
-    .filter-title {
-        font-size: 14px;
-    }
-    
-    .sort-select {
-        width: 100%;
-    }
-}
-
-@media (max-width: 576px) {
-    body {
-        font-size: 14px;
-    }
-
-    .filter-box {
-        padding: 10px;
-    }
-    
-    .doctor-card img {
-        width: 60px;
-        height: 60px;
-    }
-
-    .doctor-card .card-body h5 {
-        font-size: 18px;
-    }
-
-    .doctor-card .card-body .specialty,
-    .doctor-card .card-body .fee,
-    .doctor-card .card-body .rating {
-        font-size: 12px;
-    }
-}
--->

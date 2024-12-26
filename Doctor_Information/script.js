@@ -1,10 +1,3 @@
-const dropdowns = document.querySelectorAll('.dropdown-toggle');
-dropdowns.forEach(dropdown => {
-    dropdown.addEventListener('click', () => {
-        dropdown.parentElement.classList.toggle('open');
-    });
-});
-
 async function fetchDoctors() {
     const response = await fetch('Doctor.json');
     const doctors = await response.json();
@@ -93,7 +86,33 @@ async function init() {
 
 document.addEventListener('DOMContentLoaded', init);
 
+
+/********** Filter Box Dropdown **********/
+const dropdowns = document.querySelectorAll('.dropdown-toggle');
+dropdowns.forEach(dropdown => {
+    dropdown.addEventListener('click', () => {
+        dropdown.parentElement.classList.toggle('open');
+    });
+});
+
+
+/********** Toggle Gender **********/
+function toggleGender(selectedGender) {
+    const maleCheckbox = document.getElementById('male');
+    const femaleCheckbox = document.getElementById('female');
+    
+    if (selectedGender === 'male') {
+        femaleCheckbox.checked = false;
+    } else if (selectedGender === 'female') {
+        maleCheckbox.checked = false;
+    }
+}
+
+
+/********** Filter Toggle Button **********/
 function toggleFilterBox() {
     document.querySelector('.filter-box').classList.toggle('active');
 }
+
+
 

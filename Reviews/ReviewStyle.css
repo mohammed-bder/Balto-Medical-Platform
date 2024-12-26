@@ -532,6 +532,7 @@ h2 {
 .book-now-btn:hover {
   background-color: rgb(7, 99, 99);
 }
+<<<<<<< HEAD
 
 /* Responsive Design */
 @media (max-width: 768px) {
@@ -703,3 +704,5 @@ h2 {
   }
 
 }
+=======
+>>>>>>> 32110a9f716aa244ad8b5f592914c5593434a0a8

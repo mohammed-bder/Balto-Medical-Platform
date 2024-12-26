@@ -109,3 +109,13 @@ function openModal() {
 function closeModal() {
   document.getElementById("signup-modal").style.display = "none";
 }
+
+
+// header
+// Responsive menu toggle
+const menuToggle = document.querySelector(".menu-toggle");
+const navContent = document.querySelector(".nav-content");
+
+menuToggle.addEventListener("click", () => {
+  navContent.classList.toggle("active");
+});
