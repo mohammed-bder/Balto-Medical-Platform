@@ -7,69 +7,6 @@ body {
   color: #333;
 }
 
-/*********************************************NavBar*********************************************/
-/* Navbar Styles */
-.navbar {
-  background-color: #ffffff; /* Clean white background */
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
-  padding: 15px 20px;
-  position: sticky;
-  top: 0;
-  z-index: 1000; /* Ensure navbar is always on top */
-}
-
-.nav-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-/* Logo */
-.nav-logo {
-  font-size: 1.5rem;
-  font-weight: 700;
-  color: #3856ff; /* Blue for branding */
-}
-
-/* Nav Links */
-.nav-links {
-  display: flex;
-  list-style: none;
-  gap: 20px;
-}
-
-.nav-links li {
-  list-style: none;
-}
-
-.nav-links a {
-  text-decoration: none;
-  color: #333;
-  font-size: 1rem;
-  transition: color 0.3s ease;
-}
-
-/* Hover Effect for Links */
-.nav-links a:hover {
-  color: #3856ff; /* Highlight blue on hover */
-}
-
-/* Booking Button */
-.nav-button {
-  padding: 8px 20px;
-  border-radius: 8px;
-  background-color: #3856ff; /* Primary button color */
-  color: #fff;
-  text-decoration: none;
-  font-weight: 500;
-  transition: background-color 0.3s ease;
-}
-
-.nav-button:hover {
-  background-color: #4e89ff; /* Lighter blue on hover */
-}
-/*********************************************NavBar*********************************************/
-
 /*********************************************Container*********************************************/
 .container {
   display: flex;
@@ -105,7 +42,7 @@ body {
 .bio-section h3,
 .services-section h3 {
   margin-top: 0;
-  color: #3856ff;
+  color: teal;
 }
 
 /* Services Section */
@@ -150,7 +87,7 @@ body {
 .service-item::before {
   content: "•";
   font-size: 1.2rem;
-  color: #3856ff; /* Blue bullet point */
+  color: teal; /* Blue bullet point */
 }
 
 /* Hover Effect for Service Items */
@@ -179,7 +116,7 @@ body {
   height: 110px;
   border-radius: 50%; /* Circular image */
   object-fit: cover; /* Ensures the image scales properly */
-  border: 3px solid #3856ff; /* Highlighted border */
+  border: 3px solid teal; /* Highlighted border */
   margin-bottom: 10px;
   transition: transform 0.3s ease;
 }
@@ -225,14 +162,14 @@ h2 {
   font-size: 0.9rem;
   font-weight: 600;
   color: #fff;
-  background-color: #3856ff;
+  background-color: teal;
   border-radius: 8px;
   text-decoration: none;
   transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
 
 .book-now-btn:hover {
-  background-color: #4e89ff;
+  background-color: rgb(61, 179, 179);
   box-shadow: 0 4px 12px rgba(56, 86, 255, 0.4); /* Glow effect */
 }
 
@@ -275,13 +212,13 @@ h2 {
 
 /* Active Tab Style */
 .tab.active {
-  color: #3856ff; /* Blue text for active tab */
+  color: teal; /* Blue text for active tab */
   font-weight: 600;
 }
 
 /* Hover Effect */
 .tab:hover {
-  color: #3856ff; /* Blue highlight on hover */
+  color: teal; /* Blue highlight on hover */
 }
 
 /* Underline Highlight for Active and Hover States */
@@ -293,7 +230,7 @@ h2 {
   bottom: -2px; /* Position the underline below text */
   width: 100%;
   height: 2px;
-  background-color: #3856ff; /* Blue underline */
+  background-color: teal; /* Blue underline */
   transition: width 0.3s ease;
 }
 
@@ -336,7 +273,7 @@ h2 {
   width: 50px; /* Larger profile picture for better visibility */
   height: 50px;
   border-radius: 50%;
-  border: 2px solid #3856ff;
+  border: 2px solid teal;
   object-fit: cover;
   transition: transform 0.3s ease;
 }
@@ -405,7 +342,7 @@ h2 {
   font-size: 1.5rem;
   font-weight: bold;
   margin-bottom: 20px;
-  color: #3856ff;
+  color: teal;
 }
 
 /* Clinic List */
@@ -487,14 +424,14 @@ h2 {
 
 /* Location Icon Button */
 .location-btn {
-  color: #3856ff;
+  color: teal;
   font-size: 20px;
   text-decoration: none;
   transition: color 0.3s ease;
 }
 
 .location-btn:hover {
-  color: #4e89ff;
+  color: rgb(9, 73, 73);
 }
 
 /* Book Now Button */
@@ -548,27 +485,6 @@ h2 {
   cursor: pointer;
 }
 
-/* Scroll Buttons */
-.image-controls {
-  display: flex;
-  justify-content: space-between;
-  padding: 5px;
-  background-color: #f8f8f8;
-}
-
-.image-controls button {
-  border: none;
-  background-color: #3856ff;
-  color: white;
-  padding: 5px 10px;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-.image-controls button:hover {
-  background-color: #4e89ff;
-}
-
 /* Clinic Info */
 .clinic-info {
   padding: 15px;
@@ -603,8 +519,9 @@ h2 {
 }
 
 .book-now-btn {
+  width: fit-content;
   padding: 8px 15px;
-  background-color: #3856ff;
+  background-color: teal;
   color: #fff;
   border-radius: 8px;
   text-decoration: none;
@@ -613,20 +530,13 @@ h2 {
 }
 
 .book-now-btn:hover {
-  background-color: #4e89ff;
+  background-color: rgb(7, 99, 99);
 }
 
 /* Responsive Design */
 @media (max-width: 768px) {
   .container {
-    flex-direction: column;
-  }
-
-  .profile-section,
-  .bio-section,
-  .services-section,
-  .reviews-section {
-    width: 100%;
+    flex-direction: column; /* Stack elements vertically */
   }
 
   .profile-img {
@@ -635,40 +545,161 @@ h2 {
   }
 
   .review {
-    flex-direction: column; /* Stack elements vertically on smaller screens */
-    align-items: flex-start;
+    flex-direction: column; /* Stack elements vertically */
+    align-items: flex-start; /* Align items to the left */
   }
+
   .review-header {
     flex-direction: column; /* Stack header items vertically */
-    align-items: flex-start; /* Align to the left on mobile */
+    align-items: flex-start;
   }
 
   .review-info {
     margin-top: 10px;
-    text-align: left; /* Align to left for smaller screens */
+    text-align: left; /* Align to left */
   }
 
   .review-pic {
-    width: 35px; /* Smaller size for mobile */
+    width: 35px; /* Smaller profile picture */
     height: 35px;
   }
 
   .review-info .stars {
-    font-size: 1rem; /* Adjust star size for smaller screens */
+    font-size: 1rem; /* Smaller stars */
   }
 
   .book-now-btn {
-    padding: 8px 20px; /* Smaller button */
+    padding: 8px 20px; /* Compact button size */
     font-size: 0.85rem;
   }
 
   .tabs {
-    flex-direction: column; /* Stack tabs vertically */
-    gap: 10px;
+    gap: 10px; /* Space between tabs */
+    height: auto; /* Dynamic height based on content */
   }
 
   .tab {
     width: 100%; /* Full width for mobile */
-    text-align: center;
+    text-align: center; /* Center align text */
+    font-size: 0.9rem; /* Adjust font size */
+    padding: 12px; /* Larger touch area for better accessibility */
   }
+
+  /* Active and Hover Effects for Tabs */
+  .tab.active::after,
+  .tab:hover::after {
+    left: 40%; /* Center underline for active tab */
+    width: 20%; /* Responsive width for underline */
+  }
+
+  .clinic-card {
+    flex-direction: column; /* Stack content vertically */
+    gap: 15px;
+  }
+
+  .clinic-left {
+    width: 100%; /* Take full width */
+  }
+
+  .clinic-right {
+    width: 100%; /* Take full width */
+    align-items: flex-start; /* Align content to the left */
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    align-items: center;
+    gap: 7px;
+    padding-top: 10px;
+  }
+
+  .clinic-image {
+    width: 100px; /* Adjust image size */
+    height: 70px;
+  }
+
+  .clinic-address {
+    font-size: 0.9rem; /* Smaller font size */
+    padding-top: 6px;
+  }
+
+  .book-now-btn {
+    font-size: 0.9rem;
+    padding: 10px;
+  }
+}
+
+/* Smallest Screens (e.g., max-width: 480px) */
+@media (max-width: 480px) {
+  body {
+    font-size: 0.85rem; /* Smaller base font size */
+  }
+
+  h1 {
+    font-size: 1.5rem; /* Adjust heading sizes */
+  }
+
+  h2 {
+    font-size: 1.25rem;
+  }
+
+  h3 {
+    font-size: 1rem;
+  }
+
+  p {
+    font-size: 0.85rem;
+  }
+
+  .profile-img {
+    width: 70px; /* Even smaller profile image */
+    height: 70px;
+  }
+
+  .review-pic {
+    width: 30px; /* Compact review image */
+    height: 30px;
+  }
+
+  .review-info .stars {
+    font-size: 0.9rem; /* Smaller stars for smaller screens */
+  }
+
+  .tabs {
+    gap: 8px; /* Reduced gap for tight screens */
+    height: auto; /* Flexible height */
+    padding: 5px; /* Smaller padding */
+  }
+
+  .tab {
+    width: 100%; /* Full width tabs */
+    text-align: center; /* Align text */
+    font-size: 0.8rem; /* Smaller font size */
+    padding: 10px 8px; /* Compact padding */
+  }
+
+  /* Active and Hover Effects for Tabs */
+  .tab.active::after,
+  .tab:hover::after {
+    left: 35%; /* Adjust underline position */
+    width: 30%; /* Adjust width for underline */
+  }
+
+  .book-now-btn {
+    padding: 8px 15px; /* Compact button padding */
+    font-size: 0.8rem; /* Smaller button font size */
+  }
+
+  .review {
+    padding: 15px; /* Smaller padding for reviews */
+    gap: 10px; /* Reduced gap */
+  }
+
+  .review-header {
+    gap: 8px; /* Compact gap between elements */
+  }
+
+  .review-info {
+    text-align: left; /* Align text left for better readability */
+  }
+
 }

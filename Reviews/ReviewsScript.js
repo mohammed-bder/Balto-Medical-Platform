@@ -1,7 +1,10 @@
 // Sample review data
 const reviews = [
   { name: "Ronald Richards", role: "Engineer", image: "imgs/person1.jpg", rating: 3, date: "8 Jun, 2021", feedback: "Great experience!" },
-  { name: "Emily Johnson", role: "Designer", image: "imgs/person2.jpg", rating: 4, date: "15 Jun, 2021", feedback: "Highly recommend!" }
+  { name: "Emily Johnson", role: "Designer", image: "imgs/person2.jpg", rating: 4, date: "15 Jun, 2021", feedback: "Highly recommend!" },
+  { name: "Emily Johnson", role: "Designer", image: "imgs/person1.jpg", rating: 4, date: "15 Jun, 2021", feedback: "Highly recommend!" },
+  { name: "Emily Johnson", role: "Designer", image: "imgs/person2.jpg", rating: 4, date: "15 Jun, 2021", feedback: "Highly recommend!" },
+  { name: "Emily Johnson", role: "Designer", image: "imgs/person1.jpg", rating: 4, date: "15 Jun, 2021", feedback: "Highly recommend!" }
 ];
 
 // Doctor Data
@@ -39,6 +42,7 @@ const clinics = [
     images: ["imgs/clinic2.jpg", "imgs/clinic3.jpg", "imgs/clinic1.jpg"],
     bookingLink: "https://example.com/book-sunrise-clinic"
   }
+  
 ];
 
 // Generate Stars
