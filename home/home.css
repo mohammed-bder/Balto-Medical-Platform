@@ -44,7 +44,7 @@ body {
   width: 80%;
   max-width: 500px;
   border-radius: 10px;
-  box-shadow: 0 0 16px 4px #141414;
+  box-shadow: 0 0 16px 4px #828282;
   text-align: center;
 }
 
@@ -358,12 +358,14 @@ body {
 .service-grid {
   height: 200px;
   display: flex;
+  background-color: white;
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
   box-shadow: 0 0 20px 3px #a9a9a91a;
   border-radius: 20px;
-  transition: transform 0.3s ease-in-out;
+  transition: transform 0.6s ease-in-out, background-color 0.5s ease,
+    color 0.5s ease;
 }
 
 .service-grid-title {
@@ -378,7 +380,8 @@ body {
 .service-grid:hover {
   background-color: var(--primary-color);
   color: white !important;
-  transition: transform 0.3s ease-in-out;
+  transition: transform 0.5s ease-in-out, background-color 0.5s ease,
+    color 0.5s ease;
   transform: scale(1.2);
 }
 .service-grid:hover .service-grid-description {
@@ -415,7 +418,7 @@ body {
 .doctor-col-content {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
+  gap: 70px;
   padding: 20px 5%;
 }
 .doctor-grid {
@@ -429,6 +432,21 @@ body {
   background: url("../assets/images/doc1.jpg") no-repeat center;
   background-size: cover;
   border-radius: 20px;
+  transition: transform 0.6s ease-in-out, background-color 0.5s ease,
+    color 0.5s ease;
+}
+.doctor-grid:hover {
+  transition: transform 0.6s ease-in-out, background-color 0.5s ease,
+    color 0.5s ease;
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -o-transform: scale(1.1);
+  -webkit-transition: transform 0.6s ease-in-out, background-color 0.5s ease;
+  -moz-transition: transform 0.6s ease-in-out, background-color 0.5s ease;
+  -ms-transition: transform 0.6s ease-in-out, background-color 0.5s ease;
+  -o-transition: transform 0.6s ease-in-out, background-color 0.5s ease;
 }
 .doctor-grid-img img {
   width: 100%;
