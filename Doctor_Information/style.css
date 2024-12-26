@@ -88,6 +88,23 @@ body {
   display: block;
 }
 
+/* Filter Toggle Button */
+.filter-toggle {
+  display: none;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 0 34% 34% 0px;
+  position: fixed;
+  left: -20px;
+  border: solid;
+  z-index: 2000;
+}
+
+.filter-toggle:hover {
+  background-color: var(--doc-secondary-color);
+}
+
+
 /*********************** Doctor Card Style ***********************/
 /****** Filter Bar ******/
 .filter-bar {
@@ -140,7 +157,7 @@ body {
   color: var(--doc-primary-color);
 }
 
-/****** Doctor Card ******/
+/*************** Doctor Card ***************/
 .doctor-card {
   background-color: #fff;
   border-radius: var(--doc-border-radius);
@@ -362,30 +379,6 @@ body {
   color: #555;
 }
 
-/* Filter Toggle Button */
-.filter-toggle {
-  display: none;
-  background-color: var(--doc-primary-color);
-  color: white;
-  padding: 10px 20px;
-  border-radius: 0 34% 34% 0px;
-  cursor: pointer;
-  text-align: center;
-  margin-bottom: 20px;
-  position: fixed;
-  top: 20px;
-  left: -20px;
-  border: solid;
-  z-index: 1001;
-  -webkit-border-radius: 0 34% 34% 0px;
-  -moz-border-radius: 0 34% 34% 0px;
-  -ms-border-radius: 0 34% 34% 0px;
-  -o-border-radius: 0 34% 34% 0px;
-}
-
-.filter-toggle:hover {
-  background-color: var(--doc-secondary-color);
-}
 
 /* Responsive Design */
 @media (min-width: 992px) and (max-width: 1601px) {
@@ -505,11 +498,11 @@ body {
   }
   .filter-box.active {
     display: block !important;
-    position: fixed !important;
-    top: 332px !important;
-    left: 20px !important;
+    position: fixed;
+    top: 332px ;
+    left: 20px ;
     width: 230px !important;
-    z-index: 2000 !important;
+    z-index: 2000;
   }
 
   .doctor-card {
@@ -532,7 +525,7 @@ body {
 
   .sort-label,
   .filter-title {
-    font-size: 14px !important;
+    font-size: 14px;
   }
 
   .sort-select {
@@ -542,7 +535,7 @@ body {
 
 @media (max-width: 576px) {
   body {
-    font-size: 14px !important;
+    font-size: 14px;
   }
 
   .filter-box {
@@ -550,17 +543,17 @@ body {
   }
 
   .doctor-card img {
-    width: 60px !important;
-    height: 60px !important;
+    width: 60px;
+    height: 60px;
   }
 
   .doctor-card .card-body h5 {
-    font-size: 18px !important;
+    font-size: 18px;
   }
 
   .doctor-card .card-body .specialty,
   .doctor-card .card-body .fee,
   .doctor-card .card-body .rating {
-    font-size: 12px !important;
+    font-size: 12px;
   }
 }
