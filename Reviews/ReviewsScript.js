@@ -16,7 +16,7 @@ const doctor = {
   rating: 3,
   bio: "Dr. Stephen Conley is a renowned cardiologist with over 20 years of experience in diagnosing and treating complex heart conditions. He specializes in interventional cardiology, preventive care, and innovative treatment approaches.",
   services: ["Heart Disease Diagnosis", "Preventive Cardiology", "Interventional Procedures"],
-  bookingLink: "https://www.example.com/booking"
+  bookingLink: "../appointment/appointment.html"
 };
 
 // Sample Clinics Data
@@ -26,21 +26,21 @@ const clinics = [
     address: "123 Main Street, New York, NY",
     location: "https://www.google.com/maps?q=123+Main+Street,+New+York,+NY",
     images: ["imgs/clinic1.jpg", "imgs/clinic2.jpg", "imgs/clinic3.jpg"],
-    bookingLink: "https://example.com/book-city-clinic"
+    bookingLink: "../appointment/appointment.html"
   },
   {
     name: "Green Valley Clinic",
     address: "456 Elm Street, Los Angeles, CA",
     location: "https://www.google.com/maps?q=456+Elm+Street,+Los+Angeles,+CA",
     images: ["imgs/clinic3.jpg", "imgs/clinic2.jpg", "imgs/clinic1.jpg"],
-    bookingLink: "https://example.com/book-green-clinic"
+    bookingLink: "../appointment/appointment.html"
   },
   {
     name: "Sunrise Medical Center",
     address: "789 Pine Road, San Francisco, CA",
     location: "https://www.google.com/maps?q=789+Pine+Road,+San+Francisco,+CA",
     images: ["imgs/clinic2.jpg", "imgs/clinic3.jpg", "imgs/clinic1.jpg"],
-    bookingLink: "https://example.com/book-sunrise-clinic"
+    bookingLink: "../appointment/appointment.html"
   }
   
 ];
